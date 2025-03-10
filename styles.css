@@ -1,0 +1,87 @@
+/* 전역 스타일 */
+body {
+    background: linear-gradient(135deg, #2f3136, #4b4f57);
+    font-family: 'Arial', sans-serif;
+}
+
+/* 왼쪽 메뉴 */
+nav {
+    border-radius: 8px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .text-primary {
+    color: #7289da !important;
+}
+
+.menu-link {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #ffbf00;
+    transform: translateX(10px);
+}
+
+/* 오른쪽 콘텐츠 섹션 */
+.content-section {
+    background-color: #23272a;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* 콘텐츠 섹션 제목 */
+.content-section h2 {
+    color: #7289da;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* 디스코드 버튼 */
+.btn-primary {
+    background-color: #7289da;
+    border-color: #7289da;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5d6d9e;
+    transform: scale(1.05);
+}
+
+/* 플랫한 푸터 */
+footer {
+    background-color: #2f3136;
+    color: #99aab5;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section {
+    animation: fadeIn 0.5s ease-out;
+}

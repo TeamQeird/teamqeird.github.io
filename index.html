@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[게임 이름] 디스코드 서버</title>
+
+    <!-- Google Fonts 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light" style="font-family: 'Noto Serif KR', serif;">
+    <div class="container-fluid d-flex flex-column min-vh-100">
+        <div class="row flex-grow-1">
+            <!-- 왼쪽 메뉴 -->
+            <nav class="col-md-3 col-lg-2 bg-dark p-4 position-sticky top-0 shadow-lg" style="font-family: 'Noto Sans KR', sans-serif;">
+                <div class="text-center mb-4" style="font-family: 'Gamja Flower', cursive; font-size: 2.5em; color: #7289da; font-weight: bold;">의상한 사이트</div>
+                <ul class="list-unstyled">
+                    <li><a href="javascript:void(0)" class="menu-link mb-3" onclick="showContent('rules')" id="rules-link">서버 규칙</a></li>
+                    <li><a href="javascript:void(0)" class="menu-link mb-3" onclick="showContent('join')" id="join-link">디스코드 참여</a></li>
+                </ul>
+            </nav>
+
+            <!-- 오른쪽 메인 콘텐츠 -->
+            <div class="col-md-9 col-lg-10 p-4" id="content">
+                <section id="rules" class="content-section">
+                    <h2 class="h4">서버 규칙</h2>
+					<h4>규칙 1 - 다음 정책 및 규칙이 적용됨</h4>
+                    <ul>
+                        <li><strong>1.1. </strong>Discord 이용 약관 및 커뮤니티 가이드라인을 준수해야 합니다.</li>
+                    </ul>
+					<h4>규칙 2 - 언어 사용 및 콘텐츠</h4>
+					<ul>
+						<li><strong>2.1. </strong>채널, 스레드, 포럼은 본래 목적에 맞게만 사용해야 합니다.</li>
+						<li><strong>2.2. </strong>채널 설명도 Discord 규칙의 일부에 해당합니다.</li>
+						<li><strong>2.3. </strong>다른 사람들을 존중하고 정중하게 대하십시오. 다른 사람에게 대우받고 싶은대로 행동하십시오.<br><strong>금지 사항 :</strong></li>
+						<li><strong>2.4. </strong>욕설 사용, 모욕, 불쾌감 조성, 도발, 분쟁 유발</li>
+						<li><strong>2.5. </strong>NSFW, 간질 유발, 성적 암시, 인종차별, 동성애 혐오, 성차별 및 다른 차별적이거나 부적절한 것을 포함하는 콘텐츠</li>
+						<li><strong>2.6. </strong>도배 - 메시지, 이모지, 기호, 이미지, 반응, 답장, 멘션, 아스키 아트 등을 포함하지만 이에 국한되지는 않음.</li>
+						<li><strong>2.7. </strong>논쟁을 유발할 수 있는 정치적, 또는 다른 민감한 주제의 이야기를 시작하거나 참여하는 것.</li>
+						<li><strong>2.8. </strong>자신에게 무언가를 사주거나, 선물해 달라고 요구하거나 구걸하는 것.</li>
+						<li><strong>2.9. </strong>제재, 신고, 항소, 지원, 팀 멤버에 대한 불만 사항 등에 관해 이야기하는 것</li>
+					</ul>
+					<h4>규칙 3 - 프로필</h4>
+					<ul>
+						<li><strong>3.1. </strong>별명, 아바타, 배너, 상태, 대명사, 내 소개 등을 포함하는 당신의 프로필은 적절해야 합니다.</li>
+						<li><strong>3.2. </strong>당신의 별명은 글자와 숫자로만 이루어져야 합니다. 다른 글자와 숫자가 함께 있을 경우 이모지도 사용할 수 있습니다.</li>
+					</ul>
+					<h4>규칙 4 - 광고</h4>
+					<ul>
+						<li><strong>4.1. </strong>광고는 운영자에게 허가되지 않은 경우 어떠한 상황에서도 허용되지 않습니다. 별명과 악의적인 다이렉트 메세지를 포함합니다.</li>
+						<li><strong>4.2. </strong>광고 채널의 설명란에 광고에 대한 조건이 있습니다.</li>
+					</ul>
+					<h4>규칙 5 - 제재</h4>
+					<ul>
+						<li>
+							<strong>5.1. </strong> 제재는 다음과 같이 구성됩니다.
+							<ul>
+								<li>구두 경고</li>
+								<li>3회의 기록 경고</li>
+								<li>7일 타임아웃</li>
+								<li>7일 차단</li>
+								<li>이후의 차단은 30일임.</li>
+							</ul>
+						</li>
+						<li><strong>5.2. </strong>12개월보다 전에 만료된 제재는 무시됩니다. Discord 계정 여러 개를 사용해도 제재는 공유됩니다.</li>
+						<li><strong>5.3. </strong>관리자는 제재 순서를 무시할 권리가 있습니다.</li>
+						<li><strong>5.4. </strong>받은 제재에 관해서는 티켓을 생성하여 항소할 수 있습니다.</li>
+					</ul>
+                </section>
+
+                <section id="join" class="content-section" style="display: none;">
+                    <h2 class="h4">의상한채널 서버 참여</h2>
+                    <p>지금 바로 의상한채널 서버에 참여하세요!</p>
+                    <a href="https://discord.gg/qEbxssYEPU" class="btn btn-primary">디스코드 서버 참여하기</a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 페이지 내용 표시 함수
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // 모든 섹션 숨기기
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.style.display = 'block'; // 해당 섹션만 표시
+            }
+
+            // 메뉴 링크 색상 변경
+            const menuLinks = document.querySelectorAll('.menu-link');
+            menuLinks.forEach(link => {
+                link.style.color = ''; // 모든 메뉴 링크 색상 초기화
+            });
+
+            const activeLink = document.getElementById(`${sectionId}-link`);
+            if (activeLink) {
+                activeLink.style.color = '#ffbf00'; // 선택된 메뉴 링크 색상 노란색으로 변경
+            }
+        }
+
+        // 페이지 로드시 기본적으로 'rules' 섹션을 보이도록 설정
+        document.addEventListener('DOMContentLoaded', () => {
+            showContent('rules');
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
