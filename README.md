@@ -1,2 +1,0 @@
-# teamqeird.github.io
-Policy
